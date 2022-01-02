@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Quickie Stickies</h1>
+    </header>
+    <main>
+      <section id="timer">
+        <div id="time">
+          <p class="number interactive" tabindex=0>1</p>
+          <input type="number interactive" class="hide" />
+          <p class="units">m</p>
+          <p class="number interactive" tabindex=0>00</p>
+          <input type="number interactive" class="hide" />
+          <p class="units">s</p>
+        </div>
+        <div>
+          <button type="button" id="start-timer" class="primary interactive">Start</button>
+          <button type="button" id="stop-timer" class="primary hide interactive">Stop</button>
+          <button type="button" id="reset-timer" class="secondary interactive">Reset</button>
+        </div>
+      </section>
+      <section id="note-mods">
+        <input class="interactive" type="text" name="note-input" aria-label="Note Input" placeholder="Type and press Enter" />
+        <button type="button" id="export-notes" class="primary interactive">Export Notes</button>
+        <button type="button" id="hide-notes" class="secondary interactive">Hide Notes</button>
+        <button type="button" id="show-notes" class="secondary hide interactive">Show Notes</button>
+      </section>
+      <section id="notes">
+        <article contenteditable class="note interactive" role="textbox">
+          <p>Hello World. You can edit me!</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Made with ❤️ by Maliha Hossain</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
